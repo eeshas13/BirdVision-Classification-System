@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="section page-section">
+    <div class="container about-layout">
+      <div class="about-copy">
+        <p class="eyebrow">About the project</p>
+        <h1>Bird Identification and Classification System</h1>
+        <p>
+          Bird Identification and Classification System is an image-based application designed to demonstrate how machine learning and image processing can assist in identifying bird species.
+        </p>
+
+        <div class="about-block">
+          <h3>Problem Statement</h3>
+          <p>Manual bird identification can be difficult for beginners because many species have similar visual characteristics.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Objective</h3>
+          <p>Develop a simple image-based system that accepts a bird photograph and predicts its possible species.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Technologies Used</h3>
+          <ul class="feature-list">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQLite</li>
+            <li>Image Processing</li>
+            <li>TensorFlow/Keras</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-panel">
+        <h3>System Workflow</h3>
+        <div class="workflow-flow">
+          <span>Bird Image</span>
+          <span class="arrow">↓</span>
+          <span>Image Upload</span>
+          <span class="arrow">↓</span>
+          <span>Image Preprocessing</span>
+          <span class="arrow">↓</span>
+          <span>Classification Model</span>
+          <span class="arrow">↓</span>
+          <span>Species Prediction</span>
+          <span class="arrow">↓</span>
+          <span>Confidence Score</span>
+          <span class="arrow">↓</span>
+          <span>Bird Information</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlight-section">
+    <div class="container future-scope-box">
+      <div class="section-heading center">
+        <p class="eyebrow">Future scope</p>
+        <h2>Opportunities for expansion</h2>
+      </div>
+      <ul class="future-list">
+        <li>More bird species</li>
+        <li>Larger training dataset</li>
+        <li>Real-time camera detection</li>
+        <li>Bird sound classification</li>
+        <li>Mobile application</li>
+        <li>Location-based bird suggestions</li>
+        <li>Conservation monitoring</li>
+      </ul>
+    </div>
+  </section>
+{% endblock %}

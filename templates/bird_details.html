@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="section page-section">
+    <div class="container detail-shell">
+      {% if error %}
+        <div class="message-card error-card">
+          <h2>Bird Information Not Available</h2>
+          <p>{{ error }}</p>
+          <a href="{{ url_for('birds') }}" class="btn btn-primary">Back to Library</a>
+        </div>
+      {% else %}
+        <div class="detail-hero">
+          <div class="detail-image-wrap">
+            <img src="{{ bird.image }}" alt="{{ bird.common_name }}" />
+          </div>
+
+          <div class="detail-copy">
+            <p class="eyebrow">Bird Profile</p>
+            <h1>{{ bird.common_name }}</h1>
+            <p class="scientific-name"><em>{{ bird.scientific_name }}</em></p>
+            <span class="status-pill large-pill">{{ bird.conservation_status }}</span>
+            <p class="detail-description">{{ bird.description }}</p>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="info-card">
+            <h3>Habitat</h3>
+            <p>{{ bird.habitat }}</p>
+          </div>
+          <div class="info-card">
+            <h3>Diet</h3>
+            <p>{{ bird.diet }}</p>
+          </div>
+          <div class="info-card">
+            <h3>Distribution</h3>
+            <p>{{ bird.distribution }}</p>
+          </div>
+          <div class="info-card">
+            <h3>Interesting Fact</h3>
+            <p>{{ bird.interesting_fact }}</p>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

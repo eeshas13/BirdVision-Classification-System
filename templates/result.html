@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="section page-section">
+    <div class="container result-shell">
+      {% if error %}
+        <div class="message-card error-card">
+          <h2>Prediction Error</h2>
+          <p>{{ error }}</p>
+          <a href="{{ url_for('identify') }}" class="btn btn-primary">Try Again</a>
+        </div>
+      {% else %}
+        <div class="result-layout">
+          <div class="result-panel main-panel">
+            <div class="result-image-box">
+              <img src="{{ image_path }}" alt="Uploaded bird image" />
+            </div>
+
+            <div class="result-header">
+              <p class="eyebrow">Prediction Result</p>
+              <h2>{{ bird.common_name }}</h2>
+              <p class="scientific-name">{{ bird.scientific_name }}</p>
+            </div>
+
+            <div class="confidence-block">
+              <div class="confidence-label-row">
+                <span>Confidence</span>
+                <strong>{{ result.confidence }}%</strong>
+              </div>
+              <div class="progress-bar">
+                <span style="width: {{ result.confidence }}%"></span>
+              </div>
+            </div>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <span>Habitat</span>
+                <p>{{ bird.habitat }}</p>
+              </div>
+              <div class="info-item">
+                <span>Diet</span>
+                <p>{{ bird.diet }}</p>
+              </div>
+              <div class="info-item">
+                <span>Distribution</span>
+                <p>{{ bird.distribution }}</p>
+              </div>
+              <div class="info-item">
+                <span>Conservation Status</span>
+                <p>{{ bird.conservation_status }}</p>
+              </div>
+            </div>
+
+            <div class="description-block">
+              <h3>Description</h3>
+              <p>{{ bird.description }}</p>
+            </div>
+
+            <div class="description-block">
+              <h3>Interesting Fact</h3>
+              <p>{{ bird.interesting_fact }}</p>
+            </div>
+          </div>
+
+          <aside class="result-panel sidebar-panel">
+            <div class="status-badge">{{ mode|title }} Mode</div>
+            <h3>Top Predictions</h3>
+
+            <ul class="prediction-list">
+              {% for item in predictions %}
+                <li>
+                  <div>
+                    <span>{{ item.common_name }}</span>
+                  </div>
+                  <strong>{{ item.confidence }}%</strong>
+                </li>
+              {% endfor %}
+            </ul>
+
+            <div class="message-box">
+              <p>{{ message }}</p>
+            </div>
+          </aside>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

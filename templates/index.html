@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Bird identification made smarter</p>
+        <h1>Identify Birds with Intelligent Image Classification</h1>
+        <p class="lead">
+          Upload a bird photograph and use image classification to identify the most likely bird species and learn more about it.
+        </p>
+        <div class="button-row">
+          <a href="{{ url_for('identify') }}" class="btn btn-primary">Identify a Bird</a>
+          <a href="{{ url_for('birds') }}" class="btn btn-secondary">Explore Bird Library</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Bird nature illustration">
+        <div class="hero-card">
+          <div class="bird-orb"></div>
+          <div class="leaf leaf-one"></div>
+          <div class="leaf leaf-two"></div>
+          <div class="bird-shape">
+            <span class="wing"></span>
+            <span class="body"></span>
+            <span class="tail"></span>
+            <span class="beak"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading center">
+        <p class="eyebrow">How it works</p>
+        <h2>Simple steps for bird identification</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">1</span>
+          <h3>Upload Bird Image</h3>
+          <p>Choose a clear bird photograph from your device.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <h3>Image Preprocessing</h3>
+          <p>The system resizes and validates the image before analysis.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <h3>Feature Analysis</h3>
+          <p>Texture, color, and shape features are extracted from the image.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">4</span>
+          <h3>Species Classification</h3>
+          <p>The model compares the picture with bird categories in the dataset.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">5</span>
+          <h3>Prediction Result</h3>
+          <p>The most likely bird species and confidence score are displayed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlight-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <strong>10+</strong>
+        <span>Bird Species</span>
+      </div>
+      <div class="stat-card">
+        <strong>Image</strong>
+        <span>Classification</span>
+      </div>
+      <div class="stat-card">
+        <strong>History</strong>
+        <span>Prediction History</span>
+      </div>
+      <div class="stat-card">
+        <strong>Instant</strong>
+        <span>Results</span>
+      </div>
+    </div>
+  </section>
+{% endblock %}

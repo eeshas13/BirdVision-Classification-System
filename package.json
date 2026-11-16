@@ -1,0 +1,9 @@
+{
+  "name": "bird-species-identification-project",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Bird Species Identification & Classification dashboard deployed on Vercel",
+  "dependencies": {
+    "formidable": "^3.5.1"
+  }
+}

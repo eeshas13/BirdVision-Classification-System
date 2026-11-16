@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="section page-section">
+    <div class="container">
+      <div class="section-heading center">
+        <p class="eyebrow">Bird Library</p>
+        <h1>Explore Bird Species</h1>
+      </div>
+
+      <div class="library-toolbar">
+        <input id="birdSearch" type="search" placeholder="Search bird species..." aria-label="Search bird species" />
+      </div>
+
+      <div class="bird-grid" id="birdGrid">
+        {% for bird in birds %}
+          <article class="bird-card" data-name="{{ bird.common_name|lower }}" data-scientific="{{ bird.scientific_name|lower }}">
+            <a href="{{ url_for('bird_detail', bird_id=bird.id) }}" class="bird-card-link">
+              <img src="{{ bird.image }}" alt="{{ bird.common_name }}" />
+              <div class="bird-card-body">
+                <h3>{{ bird.common_name }}</h3>
+                <p class="scientific-name">{{ bird.scientific_name }}</p>
+                <p>{{ bird.description[:120] }}...</p>
+                <span class="status-pill">{{ bird.conservation_status }}</span>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

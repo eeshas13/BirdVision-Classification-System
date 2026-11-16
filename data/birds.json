@@ -1,0 +1,122 @@
+[
+  {
+    "id": "indian-peafowl",
+    "common_name": "Indian Peafowl",
+    "scientific_name": "Pavo cristatus",
+    "description": "The Indian Peafowl is a large, colorful bird known for its brilliant blue neck and long feather train. It is a symbol of beauty and grace in South Asia.",
+    "habitat": "Forests, agro-forest areas, and village edges",
+    "diet": "Seeds, insects, small reptiles, and plant matter",
+    "distribution": "India, Sri Lanka, and parts of neighboring regions",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "The male peacock displays its long tail feathers to attract females during courtship.",
+    "image": "/static/images/birds/indian_peafowl.svg"
+  },
+  {
+    "id": "house-sparrow",
+    "common_name": "House Sparrow",
+    "scientific_name": "Passer domesticus",
+    "description": "The House Sparrow is a familiar urban bird with crisp brown and grey plumage. It is highly social and often seen near homes and farms.",
+    "habitat": "Urban areas, villages, and agricultural lands",
+    "diet": "Seeds, grains, and insects",
+    "distribution": "Across Europe, Asia, and parts of North America",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "House Sparrows often live close to humans and are known for forming large communal flocks.",
+    "image": "/static/images/birds/house_sparrow.svg"
+  },
+  {
+    "id": "common-kingfisher",
+    "common_name": "Common Kingfisher",
+    "scientific_name": "Alcedo atthis",
+    "description": "The Common Kingfisher is a small bird with brilliant blue upperparts and a sharp, pointed beak adapted for catching fish.",
+    "habitat": "Rivers, streams, ponds, and canals",
+    "diet": "Fish, crustaceans, and aquatic insects",
+    "distribution": "Europe, Asia, and northern Africa",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "This bird often perches above water and dives quickly to catch prey with remarkable precision.",
+    "image": "/static/images/birds/common_kingfisher.svg"
+  },
+  {
+    "id": "barn-owl",
+    "common_name": "Barn Owl",
+    "scientific_name": "Tyto alba",
+    "description": "The Barn Owl is a nocturnal bird of prey recognized by its pale face, heart-shaped facial disc, and silent wingbeats.",
+    "habitat": "Open countryside, barns, agricultural fields, and grasslands",
+    "diet": "Small mammals, birds, and insects",
+    "distribution": "Worldwide in suitable habitats",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "Barn Owls can hunt in near darkness using extremely sensitive hearing.",
+    "image": "/static/images/birds/barn_owl.svg"
+  },
+  {
+    "id": "rock-pigeon",
+    "common_name": "Rock Pigeon",
+    "scientific_name": "Columba livia",
+    "description": "The Rock Pigeon is a familiar city bird with gray plumage, a small head, and a strong homing instinct.",
+    "habitat": "Cities, cliffs, buildings, and agricultural regions",
+    "diet": "Seeds, grains, and small plant matter",
+    "distribution": "Worldwide, especially in urban ecosystems",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "Domestic pigeons are descendants of the wild Rock Pigeon and are known for their navigation abilities.",
+    "image": "/static/images/birds/rock_pigeon.svg"
+  },
+  {
+    "id": "rose-ringed-parakeet",
+    "common_name": "Rose-ringed Parakeet",
+    "scientific_name": "Psittacula krameri",
+    "description": "This parakeet has a bright green body, a rosy collar, and a strong hooked bill used to crack seeds and fruit.",
+    "habitat": "Woodlands, gardens, and urban parks",
+    "diet": "Seeds, fruits, nuts, and blossoms",
+    "distribution": "South Asia and introduced regions in Africa and Europe",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "They are highly vocal and often gather in noisy flocks during the evening.",
+    "image": "/static/images/birds/parakeet.svg"
+  },
+  {
+    "id": "common-myna",
+    "common_name": "Common Myna",
+    "scientific_name": "Acridotheres tristis",
+    "description": "The Common Myna is a bold and adaptable bird with dark brown plumage, a bright yellow bill, and a loud call.",
+    "habitat": "Urban centers, agricultural regions, and open areas",
+    "diet": "Insects, fruits, seeds, and garbage scraps",
+    "distribution": "South Asia and many introduced areas across the world",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "Common Mynas often imitate sounds and can be highly visible around human settlements.",
+    "image": "/static/images/birds/common_myna.svg"
+  },
+  {
+    "id": "indian-roller",
+    "common_name": "Indian Roller",
+    "scientific_name": "Coracias benghalensis",
+    "description": "The Indian Roller is known for its vivid blue-green wings and graceful aerial displays. It is often seen perched on power lines.",
+    "habitat": "Open countryside, grasslands, and agricultural land",
+    "diet": "Insects, lizards, and small vertebrates",
+    "distribution": "South Asia and parts of Southeast Asia",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "Their display flight is dramatic, showing a brilliant burst of color when they dive and turn.",
+    "image": "/static/images/birds/indian_roller.svg"
+  },
+  {
+    "id": "red-vented-bulbul",
+    "common_name": "Red-vented Bulbul",
+    "scientific_name": "Pycnonotus cafer",
+    "description": "This bulbul has a compact body, a black head, and a vivid red patch under the tail. It is common in gardens and scrubland.",
+    "habitat": "Shrubland, gardens, forests, and urban green spaces",
+    "diet": "Fruits, berries, nectar, and insects",
+    "distribution": "South Asia",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "It produces a cheerful and repeated song that is often heard in the early morning.",
+    "image": "/static/images/birds/red_vented_bulbul.svg"
+  },
+  {
+    "id": "black-kite",
+    "common_name": "Black Kite",
+    "scientific_name": "Milvus migrans",
+    "description": "The Black Kite is a graceful raptor often seen soaring over cities and open fields while scanning for food.",
+    "habitat": "Open country, wetlands, towns, and agricultural landscapes",
+    "diet": "Small mammals, fish, birds, and carrion",
+    "distribution": "Europe, Africa, and Asia",
+    "conservation_status": "Least Concern",
+    "interesting_fact": "Black Kites are opportunistic feeders and can often be seen gliding in search of food.",
+    "image": "/static/images/birds/black_kite.svg"
+  }
+]

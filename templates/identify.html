@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="section page-section">
+    <div class="container narrow-container">
+      <div class="section-heading center">
+        <p class="eyebrow">Image classification</p>
+        <h1>Upload a Bird Image</h1>
+      </div>
+
+      <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data" class="upload-form" id="birdUploadForm">
+        <div class="upload-dropzone" id="dropZone" tabindex="0" aria-label="Upload bird image">
+          <input type="file" id="imageInput" name="image" accept=".jpg,.jpeg,.png,image/jpeg,image/png" hidden />
+
+          <div class="upload-inner" id="uploadInner">
+            <div class="upload-icon">🦅</div>
+            <p class="upload-title">Choose a bird image</p>
+            <p class="upload-subtitle">JPG, JPEG and PNG files supported</p>
+            <button type="button" class="btn btn-secondary upload-trigger" id="browseButton">Browse Files</button>
+          </div>
+
+          <div class="preview-wrap hidden" id="imagePreviewWrap">
+            <img id="imagePreview" src="" alt="Selected bird preview" />
+            <div class="preview-actions">
+              <span id="fileName">No file selected</span>
+              <button type="button" class="mini-button" id="removeImage">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary analyze-btn" id="analyzeButton">
+            Analyze Bird
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+{% endblock %}
